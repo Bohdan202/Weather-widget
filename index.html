@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+        <div class="background">
+            <img src="img/kyiv.jpg" alt="Kyiv" class="background-img active" id="Kyiv">
+            <img src="img/Lviv.jpg" alt="Lviv" class="background-img" id="Lviv">
+            <img src="img/Kharkiv.jpg" alt="Kharkiv" class="background-img" id="Kharkiv">
+            <img src="img/Odessa.jpg" alt="Odessa" class="background-img" id="Odessa">
+            <img src="img/Chernivtsi.jpg" alt="Chernivtsi" class="background-img" id="Chernivtsi">
+            
+
+            <div class="content">
+                <div class="content__top">
+                    <h1 class="main-title">Your daily weather</h1>
+                    <select class="selector" id="city">
+                        <option value="703448">Kyiv</option>
+                        <option value="702550">Lviv</option>
+                        <option value="706483">Kharkiv</option>
+                        <option value="4166787">Odessa</option>
+                        <option value="710719">Chernivtsi</option>
+                    <select>
+                </div>
+                
+                <div class="block-content__middle">
+                    <h1 class="middle__title"></h1>
+                    <div class="middle__description">
+                        <div class="description-icon">
+                            <div class="weather-icon"></div>
+
+                            
+                            <h2 class="icon-subtitle"></h2>
+                        </div>
+                        <div class="temperature-option">
+                            <div class="description-temperature"></div>
+                            <hr class="horisontal-line">
+                        
+                            <div class="description-feels">Feels Like: <span class="description-feels__value"></span></div>
+                            <div class="description-sunrise">
+                                Sunrise: <span class="description-sunrise__value"></span></>
+                            </div>
+                            <div class="description-sunset">
+                                Sunset: <span class="description-sunset__value"></span>
+                            </div>
+                        </div>
+                        <div class="middle-sidebar">
+                            <div class="sidebar-description">
+                                <h5 class="temp__max">max temp: <span class="temp__max-value"></span> </h5>
+                                <h5 class="temp__min">min temp: <span class="temp__min-value"></span> </h5>
+                                <h5 class="pressure">pressure: <span class="pressure-value"></span> </h5>
+                                <h5 class="weather-desc">description: <br> <span class="weather-desc-value"></span> </h5>
+
+                            </div>
+                            <div class="sidebar-hum__wind">
+                                <div class="sidebar-hum">
+                                    Humidity: <span class="sidebar-hum__value"></span>
+                                </div>
+                                <div class="sidebar-wind">
+                                    Wind: <span class="sidebar-wind__value"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
+
+    <script src="script.js"></script>
+</body>
+
+</html>
